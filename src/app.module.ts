@@ -6,6 +6,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigService, ConfigModule } from '@nestjs/config';
 import { Connection } from 'mongoose';
+import { WalletModule } from './modules/wallet/wallet.module';
 
 @Module({
   imports: [
@@ -40,6 +41,7 @@ import { Connection } from 'mongoose';
     }),
     UsersModule,
     AuthModule,
+    WalletModule,
   ],
   controllers: [AppController],
   providers: [AppService],
