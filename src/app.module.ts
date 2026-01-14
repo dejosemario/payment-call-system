@@ -8,6 +8,7 @@ import { ConfigService, ConfigModule } from '@nestjs/config';
 import { Connection } from 'mongoose';
 import { WalletModule } from './modules/wallet/wallet.module';
 import { PaymentsModule } from './modules/payments/payments.module';
+import { CallsModule } from './modules/calls/calls.module';
 
 @Module({
   imports: [
@@ -44,6 +45,7 @@ import { PaymentsModule } from './modules/payments/payments.module';
     AuthModule,
     WalletModule,
     PaymentsModule,
+    CallsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
